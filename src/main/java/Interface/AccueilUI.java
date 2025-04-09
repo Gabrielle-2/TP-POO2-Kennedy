@@ -7,8 +7,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -17,6 +20,12 @@ public class AccueilUI extends Application {
     @Override
     public void start(Stage primaryStage) {
         // ----------- Partie gauche : fond bleu foncé avec titre/logo -----------
+        Image logo = new Image(getClass().getResource("/Logo.png").toExternalForm());
+        ImageView logoView = new ImageView(logo);
+        logoView.setFitWidth(50);
+        logoView.setPreserveRatio(true);
+
+
         VBox leftPane = new VBox();
         leftPane.setPrefWidth(300);
         leftPane.setAlignment(Pos.CENTER);
@@ -28,7 +37,7 @@ public class AccueilUI extends Application {
         titleLabel.setStyle("-fx-font-weight: bold; -fx-font-style: italic;");
         titleLabel.setEffect(new DropShadow());
 
-        leftPane.getChildren().add(titleLabel);
+        leftPane.getChildren().addAll(logoView,titleLabel);
 
         // ----------- Partie droite : boutons sur fond bleu clair -----------
         VBox rightPane = new VBox(20);

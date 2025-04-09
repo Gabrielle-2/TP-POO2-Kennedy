@@ -127,7 +127,7 @@ public class LoginUI extends Application {
         VBox layout = new VBox(30);
         layout.setAlignment(Pos.CENTER);
         layout.getChildren().add(grid);
-        layout.setStyle("-fx-background-color: #f0f0f0;"); // couleur de fond claire
+        layout.setStyle("-fx-background-color: #0d47a1;"); // couleur de fond claire
 
         Scene scene = new Scene(layout, 500, 450);
         primaryStage.setScene(scene);

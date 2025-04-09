@@ -33,6 +33,7 @@ public class ShowOrdi extends Application {
 
         List<String> ordinateurs = ordinateurDAO.showOrdinateurs();
 
+
         // Créer un bouton retour avec un meilleur design
         Button retourButton = new Button("Retour vers Menu Principal");
         retourButton.setStyle("-fx-font-size: 16px; -fx-background-color: #8e24aa; -fx-text-fill: white; -fx-border-radius: 10px; -fx-padding: 10px;");

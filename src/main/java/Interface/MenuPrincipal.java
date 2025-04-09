@@ -58,7 +58,8 @@ public class MenuPrincipal extends Application {
         // --- LAYOUT PRINCIPAL ---
         VBox root = new VBox(15);
         root.setPadding(new Insets(15));
-        root.setStyle("-fx-background-color: #f0f8ff;"); // Fond bleu clair
+
+        root.setStyle("-fx-background-color: #0d47a1;"); // couleur de fond claire
         root.getChildren().addAll(menuBar, buttonBox);
 
         // --- SCENE ---

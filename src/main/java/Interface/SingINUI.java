@@ -130,7 +130,8 @@ public class SingINUI extends Application {
         VBox layout = new VBox(30);
         layout.getChildren().add(grid);
         layout.setAlignment(Pos.CENTER);
-        layout.setStyle("-fx-background-color: #f4f4f4;"); // fond clair
+
+        layout.setStyle("-fx-background-color: #0d47a1;"); // couleur de fond claire
 
         Scene scene = new Scene(layout, 600, 600);
         primaryStage.setScene(scene);
